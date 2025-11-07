@@ -142,26 +142,11 @@
 
         /* Fundamental horizontal scroller */
         .fund-viewport { position: absolute; left: 0; top: 112px; width: 380px; height: 56px; overflow-x: auto; overflow-y: hidden; padding-bottom: 12px; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; touch-action: pan-x; padding-right: 0; padding-left: 0;  }
-        .container.collapsed .fund-viewport { display: none; }
-        .fund-inner { position: absolute; width: 1646px; height: 48px; left: 0px; }
         .fund-inner .fundamental-value { top: 22px !important; }
 
         .fund-viewport {
             scrollbar-color: rgba(166, 166, 166, 0.3) transparent;
             scrollbar-width: thin;
-        }
-
-        @media (max-width: 420px) {
-            .card-viewport {
-                width: 100%;
-                max-width: 380px;
-                margin-left: auto;
-                margin-right: auto;
-                display: flex;
-                justify-content: center;
-                transform-origin: top center;
-            }
-            .fund-viewport { width: 380px; }
         }
 
         /* Page Header Styling */
